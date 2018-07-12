@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+ <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.9">   
+
+<GridLayout
+    android:id="@+id/GL_meslistes"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:orientation="horizontal"
+    android:useDefaultMargins="true" >
+
+</GridLayout>
+</ScrollView>
+<LinearLayout
+      android:id="@+id/L_boutons"
+     android:layout_width="match_parent"
+            android:layout_height="0dip"
+        android:layout_weight="0.1"
+       android:orientation="horizontal" >
+               
+<Button
+    android:id="@+id/B_OK2"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="40dip"
+    android:background="@drawable/b_ok"
+    android:paddingLeft="10dip" />
+
+    <Button
+        android:id="@+id/B_NewListe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/b_newlist"
+        android:padding="5dip" />>
+    
+    
+    
+</LinearLayout>      
+    
+    
+</LinearLayout>

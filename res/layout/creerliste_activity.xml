@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+       <TextView
+            android:id="@+id/TV_Creerliste" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+          android:text="@+string/TV_Creerliste"
+    />     
+    
+      <TextView
+            android:id="@+id/TV_NomNewList" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+          android:text="@+string/TV_NomNewList"
+    />     
+       
+       <EditText
+      android:id="@+id/ET_NomNewList"
+     android:layout_width="300dip"
+          android:layout_gravity="center"
+        android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:hint="@+string/Hint_NomNewList"
+       />
+    
+         <TextView
+            android:id="@+id/TV_DescNewList" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"                                                                      
+        android:paddingBottom="5dip"
+        android:text="@+string/TV_DescNewList"
+    />     
+    
+       <EditText
+      android:id="@+id/ET_DescNewList"
+     android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textMultiLine"
+               android:layout_marginBottom="30dip"
+              
+       />
+
+     <LinearLayout  
+           android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+        <Button
+    android:id="@+id/B_OKNewList"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_gravity="center"
+    android:layout_marginLeft="50dip"
+    android:background="@drawable/b_ok"
+/>
+
+        <Button
+            android:id="@+id/B_CancelNewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:background="@drawable/b_retour"
+   />
+             
+        </LinearLayout>
+</LinearLayout>

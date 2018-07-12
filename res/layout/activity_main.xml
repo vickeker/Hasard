@@ -1,0 +1,216 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="keker.hasard.MainActivity" 
+     android:background="#FFFFFF">
+    
+<RelativeLayout
+     android:id="@+id/L_menuhaut"
+           android:orientation="horizontal"
+      android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.10" 
+        android:visibility="gone" 
+        android:layout_marginTop="3dip"
+          >
+<Spinner
+    android:id="@+id/Sp_liste"
+          android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+              android:drawSelectorOnTop="true"
+  />
+
+<Button 
+    android:id="@+id/B_Edit"
+     android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:paddingLeft="5dip"
+        android:layout_toRightOf="@id/Sp_liste"
+    android:background="@drawable/b_edit"
+    />
+
+<Button 
+    android:id="@+id/B_MesListes"
+     android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="30dip"
+        android:layout_toRightOf="@id/B_Edit"
+    android:background="@drawable/b_meslistes"
+    />
+
+   </RelativeLayout>
+
+
+<RelativeLayout
+     android:id="@+id/L_menuparam"
+           android:orientation="horizontal"
+      android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.10" 
+        android:visibility="gone" 
+          >
+
+<EditText
+        android:id="@+id/ET_param1"
+     android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"
+          android:hint="@string/Hint_param1"
+        android:paddingLeft="20dip"
+        />
+
+<TextView
+    android:id="@+id/TV_param2"
+          android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:paddingLeft="5dip"
+               android:layout_toRightOf="@id/ET_param1"
+              android:text="@+string/TV_param"
+  />
+
+<EditText
+        android:id="@+id/ET_param2"
+     android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+       android:inputType="number"
+        android:hint="@string/Hint_param2"
+        android:paddingLeft="5dip"
+        android:layout_toRightOf="@id/TV_param2"
+        />
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:id="@+id/ecran_princ"
+              android:orientation="horizontal"
+                android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.60"
+          >
+          
+       <Button
+                android:id="@+id/B_Start"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+      android:background="@drawable/b_start" 
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      />
+
+            <TextView
+                android:id="@+id/T_Result"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:visibility="gone" />
+            
+            </RelativeLayout>
+<LinearLayout
+    android:id="@+id/L_ParamResult"
+    android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.10" 
+    android:orientation="horizontal" >
+            
+  <TextView
+                android:id="@+id/T_TpsAnim"
+                android:layout_width="70dip"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/T_TpsAnim"
+                android:textColor="#9E9E9E"
+                android:textSize="12sp"
+  />   
+    
+ <Spinner
+        android:id="@+id/S_TpsAnim"
+                  android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawSelectorOnTop="true"
+        android:layout_gravity="center_vertical"
+        android:textSize="12sp"
+        android:paddingLeft="5dip"
+       android:entries="@array/S_TpsAnim"
+        android:prompt="@string/S_TpsAnimPrompt"
+        />
+ 
+ <TextView
+                android:id="@+id/T_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/T_sec"
+                android:textColor="#9E9E9E"
+                android:textSize="12sp"
+  />   
+ 
+ <CheckBox 
+  android:id="@+id/CB_TirageExclusif"   
+  android:layout_width="wrap_content"
+  android:layout_height="40dip"
+  android:text="@string/CB_TirageExclusif"
+  android:textColor="#9E9E9E"
+  android:textSize="12sp"
+  android:checked="false"
+  android:layout_gravity="center_vertical"
+  android:layout_marginLeft="40dip" />
+ 
+                
+</LinearLayout>
+    
+<RelativeLayout 
+        android:id="@+id/L_menubas"
+      android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.10" 
+        android:visibility="gone"  >
+        
+        <TextView
+            android:id="@+id/barre_menu_bas" 
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="#808080"
+        android:paddingBottom="5dip"
+    />    
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/barre_menu_bas"
+    android:orientation="horizontal" >
+               
+<Button
+    android:id="@+id/B_Retour"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dip"
+    android:layout_marginRight="30dip"
+    android:background="@drawable/b_retour"
+    android:paddingLeft="10dip" />
+
+    <Button
+        android:id="@+id/B_Start2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="30dip"
+        android:background="@drawable/b_start"
+        android:padding="5dip" />
+
+    <Button
+        android:id="@+id/B_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/b_save"
+        android:padding="5dip" />
+   
+</LinearLayout>
+</RelativeLayout>
+</LinearLayout>

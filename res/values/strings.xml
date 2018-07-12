@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hasard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="TV_param"> - </string>
+    <string name="Hint_param1">0</string>
+    <string name="Hint_param2">10</string>
+  <string name="angle_rotation">1260</string>
+  <string name="edit_list_activity">Editer la liste</string>
+  <string name="creer_list_activity">Créer une nouvelle liste</string>
+   <string name="meslistes_activity">Mes listes</string>
+  <string name="TV_Creerliste">Création de la nouvelle liste</string>
+  <string name="TV_NomNewList">Nom de la liste</string>
+  <string name="TV_DescNewList">Courte description de la liste</string>
+  <string name="Message_EditText">Table sauvegarder avec succès</string>
+  <string name="Hint_NomNewList">Sans espace accent / , * " \' () !</string>
+  <string name="T_TpsAnim">Durée de l\'animation: </string>
+  <string name="Hint_TpsAnim">sec</string>
+  <string name="CB_TirageExclusif">Exclure les résultats enregistrés</string>
+   <string name="S_TpsAnimPrompt">3</string>
+    <string name="T_sec">sec</string>
+  <string-array name="S_TpsAnim">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+</resources>

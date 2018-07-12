@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+    
+   <RelativeLayout
+              android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.9"
+        >
+        
+    <LinearLayout
+        android:id="@+id/L_additem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+   <EditText
+      android:id="@+id/ET_newitem"
+     android:layout_width="200dip"
+        android:layout_height="wrap_content"
+            android:paddingBottom="10dip"   
+       />
+   
+   <Button
+    android:id="@+id/B_additem"
+    android:layout_width="20dip"
+    android:layout_height="20dip"
+        android:layout_gravity="center"
+    android:layout_marginLeft="8dip"
+    android:background="@drawable/b_additem"
+    android:paddingLeft="20dip" />
+   
+   
+  <Button
+    android:id="@+id/B_deleteitem"
+    android:layout_width="20dip"
+    android:layout_height="20dip"
+    android:layout_marginLeft="8dip"
+        android:layout_gravity="center"
+    android:background="@drawable/b_deleteitem"
+    android:paddingLeft="20dip" />
+  
+    <Button
+    android:id="@+id/B_Annuler"
+    android:layout_width="wrap_content"
+    android:layout_height="20dip"
+    android:layout_marginLeft="8dip"
+    android:layout_gravity="center"
+     android:background="@drawable/b_annuler"
+    android:paddingLeft="20dip" />
+    
+   </LinearLayout>
+  
+    <TextView 
+                   android:id="@+id/TV_Message" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_below="@id/L_additem"
+        android:text="@string/Message_EditText"
+        android:gravity="center"
+       />
+    	
+    	<ListView 
+    	    android:id="@+id/editlist" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="10dip" 
+		android:layout_below="@id/TV_Message"
+		    android:choiceMode="multipleChoice" 
+		/>
+    </RelativeLayout>
+    
+ <RelativeLayout
+             android:id="@+id/L_menubas2"
+      android:layout_width="match_parent"
+        android:layout_height="0dip"
+         android:layout_weight="0.1"
+      >
+        
+        <TextView
+            android:id="@+id/barre_menu_bas2" 
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="#808080"
+        android:paddingBottom="5dip"
+    />     
+    
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/barre_menu_bas2"
+    android:orientation="horizontal" >
+               
+<Button
+    android:id="@+id/B_Retour2"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dip"
+    android:layout_marginRight="30dip"
+    android:background="@drawable/b_retour"
+    android:paddingLeft="10dip" />
+
+    <Button
+        android:id="@+id/B_Start2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginRight="30dip"
+        android:background="@drawable/b_start"
+        android:padding="5dip" />
+
+    <Button
+        android:id="@+id/B_Save2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/b_save"
+        android:padding="5dip" />
+   
+</LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>
